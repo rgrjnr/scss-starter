@@ -1,0 +1,45 @@
+$base-space-unit: 1rem;
+
+$sizes: (
+    "none": 0,
+    "xs": calc($base-space-unit / 4),
+    "sm": calc($base-space-unit / 2),
+    "md": calc($base-space-unit / 1),
+    "lg": calc($base-space-unit * 2),
+    "xl": calc($base-space-unit * 4),
+    "xxl": calc($base-space-unit * 8),
+    "inherit": inherit,
+    "auto": auto
+);
+
+$directions: (
+    "t": "-top",
+    "l": "-left",
+    "r": "-right",
+    "b": "-bottom",
+    "v": "-block",
+    "h": "-inline",
+    "a": ""
+);
+
+@each $s,
+$size in $sizes {
+
+
+    .gap-#{$s} {
+        gap: #{$size};
+    }
+
+    @each $d,
+    $dir in $directions {
+
+        .m#{$d}-#{$s} {
+            margin#{$dir}: #{$size} !important;
+        }
+
+        .p#{$d}-#{$s} {
+            padding#{$dir}: #{$size} !important;
+        }
+
+    }
+}
