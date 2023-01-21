@@ -7,6 +7,7 @@
 
 .container {
     max-width: $content-well-max-width;
+    width: 100%;
     margin: 0 auto;
     padding: var(--outer-margin);
 }
@@ -156,15 +157,15 @@
 }
 
 .text-right {
-    text-align: right;
+    text-align: right !important;
 }
 
 .text-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 .text-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 // Mixin to run inside of for loop - creates visibility classes * Not for developer use *
