@@ -59,7 +59,7 @@ video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    font-family: inherit;
     vertical-align: baseline;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -106,4 +106,6 @@ input {
     -webkit-appearance: none;
     appearance: none;
     border-radius: 0;
+    font-family: inherit;
+    font-size: inherit;
 }
